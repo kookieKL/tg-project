@@ -21,7 +21,7 @@ BINANCE_URL = "https://data-api.binance.vision/api/v3/ticker/24hr"
 
 
 def load_token() -> str | None:
-    token = os.getenv("8776862137:AAFVeudvF2i0NPAwWzsCCBgxWCZYcKugyoY")
+    token = os.getenv("TOKEN")
     if token:
         return token.strip()
     if os.path.exists(TOKEN_FILE):
